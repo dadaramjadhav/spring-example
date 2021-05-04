@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 MAINTAINER dmjadhav
-COPY target/dockerspringboot-1.1.jar dockerspringboot-1.1.jar
-ENTRYPOINT ["java","-jar","./dockerspringboot-1.1.jar"]
+COPY target/docker-jenkins.jar docker-jenkins.jar
+ENTRYPOINT ["java","-jar","./docker-jenkins.jar"]
